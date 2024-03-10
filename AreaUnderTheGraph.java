@@ -10,7 +10,7 @@ class AreaUnderTheGraph {
         double b = sc.nextDouble();
         sc.close();
 
-        double period = 0.1; 
+        double period = 0.001; 
         double k = 0.5;
         double x = 0;
         double y = 0;
