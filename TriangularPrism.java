@@ -24,10 +24,10 @@ class TriangularPrism {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        double a = sc.nextInt();
-        double b = sc.nextInt();
-        double c = sc.nextInt();
-        double h = sc.nextInt();
+        double a = sc.nextDouble();
+        double b = sc.nextDouble();
+        double c = sc.nextDouble();
+        double h = sc.nextDouble();
         sc.close();
 
         TriangularPrism prism = new TriangularPrism(a, b, c, h);
