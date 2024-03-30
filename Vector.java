@@ -82,6 +82,6 @@ class Vector {
         System.out.println("Координаты вектора -- произведения векторов: " + "(" + vc1.vectorMultiplication(vc2).x + ", " + vc1.vectorMultiplication(vc2).y + ", " + vc1.vectorMultiplication(vc2).z + ")");
         System.out.println("Угол между векторами: " + vc1.angleBetweenVectors(vc2));
         System.out.println("Длина первого вектора: " + vc1.vectorLength() + ", длина второго вектора: " + vc2.vectorLength());
-        System.out.format("Площадь параллелограмма, основанного на заданных векторах: " + vc1.areaParallelogram(vc2)); 
+        System.out.println("Площадь параллелограмма, основанного на заданных векторах: " + vc1.areaParallelogram(vc2)); 
     }
 }
