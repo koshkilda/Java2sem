@@ -27,7 +27,7 @@ class DivisorsOfNaturalNumbers {
     
     
     public static void main(String[] args) {
-        System.out.println("Введите число до 99999999");
+        System.out.println("Введите число до 99999999"); // 2147483646
         
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
