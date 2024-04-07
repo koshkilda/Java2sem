@@ -2,6 +2,8 @@ import java.util.Scanner;
 
 class Fibonacci {
     public static void main(String[] args) {
+        System.out.println("Введите число до 2147483647");
+        
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         sc.close();
