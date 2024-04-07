@@ -1,4 +1,5 @@
 import java.util.Scanner;
+import java.lang.Math;
 
 class DivisorsOfNaturalNumbers {
     public static int number_of_divisors(int n) {
