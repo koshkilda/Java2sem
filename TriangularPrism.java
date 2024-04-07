@@ -30,12 +30,16 @@ class TriangularPrism {
         double h = sc.nextDouble();
         sc.close();
 
-        TriangularPrism prism = new TriangularPrism(a, b, c, h);
+        if (a + b > c && a + c > b && b + c > a) {
+            TriangularPrism prism = new TriangularPrism(a, b, c, h);
         
-        System.out.println("Параметры призмы: " + a + ", " + b + ", " + c + " -- длины сторон основания, " + h + " -- высота.");
-        System.out.println(prism.wallArea(a, h) + " -- площадь боковой поверхности на " + a + ".");
-        System.out.println(prism.wallArea(b, h) + " -- площадь боковой поверхности на " + b + ".");
-        System.out.println(prism.wallArea(c, h) + " -- площадь боковой поверхности на " + c + ".");
-        System.out.format("%.3f -- объем призмы.", prism.volume(a, b, c, h));
+            System.out.println("Параметры призмы: " + a + ", " + b + ", " + c + " -- длины сторон основания, " + h + " -- высота.");
+            System.out.println(prism.wallArea(a, h) + " -- площадь боковой поверхности на " + a + ".");
+            System.out.println(prism.wallArea(b, h) + " -- площадь боковой поверхности на " + b + ".");
+            System.out.println(prism.wallArea(c, h) + " -- площадь боковой поверхности на " + c + ".");
+            System.out.format("%.3f -- объем призмы.", prism.volume(a, b, c, h));
+        } else {
+            System.out.println("Невозможно создать треугольное основание с такими параметрами.");
+        }
     }
 }
